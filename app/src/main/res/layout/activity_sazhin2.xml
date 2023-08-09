@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_stena_2"
+    tools:context=".mainActivities.SazhinActivity2">
+
+    <ImageView
+        android:id="@+id/imPhotoSazhin2"
+        android:layout_width="240dp"
+        android:layout_height="584dp"
+        android:layout_marginBottom="144dp"
+        android:background="#000B0303"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sazhin_2" />
+
+    <ImageView
+        android:id="@+id/imRamkaSazhin2"
+        android:layout_width="349dp"
+        android:layout_height="660dp"
+        android:layout_marginBottom="100dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imPhotoSazhin2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imPhotoSazhin2"
+        app:srcCompat="@drawable/ramka_6" />
+
+    <ImageButton
+        android:id="@+id/imBtReverse"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#52131010"
+        android:onClick="setOnClickCloseSazhin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/imPolkaSazhin2"
+        android:layout_width="277dp"
+        android:layout_height="486dp"
+        android:layout_marginBottom="424dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imPhotoSazhin2"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/imPhotoSazhin2"
+        app:srcCompat="@drawable/polka3" />
+
+    <TextView
+        android:id="@+id/tvCitationSazhin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="668dp"
+        android:background="#25040000"
+        android:rotationX="10"
+        android:text="&quot;Творю, создаю, короче кайфую&quot;"
+        android:textColor="#EAD411"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imPolkaSazhin2"
+        app:layout_constraintStart_toStartOf="@+id/imPolkaSazhin2" />
+
+    <TextView
+        android:id="@+id/tvDescriptionSazhin2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:background="#27090101"
+        android:gravity="center"
+        android:rotationX="-10"
+        android:text="Описание: Создатель этого приложения, трезвый ум компании."
+        android:textColor="#AFA01C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imPhotoSazhin2"
+        app:layout_constraintStart_toStartOf="@+id/imPhotoSazhin2" />
+
+    <TextView
+        android:id="@+id/tvExileSazhin2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoLink="all|web"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:rotationX="-10"
+        android:text="Ссылка в VK: https://vk.com/sazhinklass"
+        android:textColor="#AFA01C"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescriptionSazhin2"
+        app:layout_constraintStart_toStartOf="@+id/tvDescriptionSazhin2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionSazhin2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

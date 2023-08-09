@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_stena"
+    tools:context=".mainActivities.MainActivity">
+
+    <Button
+        android:id="@+id/btSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:background="#9AB1AC7C"
+        android:backgroundTint="#FFEB3B"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="#FFEB3B"
+        android:text="Найти"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textColorLink="#FFEB3B"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tvDevelloper"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:rippleColor="#FFEB3B"
+        app:strokeColor="#FFEB3B" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:rotationX="40"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvDevelloper"
+        app:layout_constraintEnd_toEndOf="@+id/btSearch"
+        app:layout_constraintStart_toStartOf="@+id/btSearch" />
+
+    <TextView
+        android:id="@+id/tvDevelloper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:rotationX="40"
+        android:text="Разработчик сия творения -> Сажин Егор"
+        android:textColor="#EAE089"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:rotationX="40"
+        android:text="Стек технологии: Android Studio, kotlin"
+        android:textColor="#E8DF92"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvDevelloper"
+        app:layout_constraintTop_toBottomOf="@+id/tvDevelloper" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="134dp"
+        android:layout_height="380dp"
+        app:layout_constraintEnd_toEndOf="@+id/imRamka"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/imRamka"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shab" />
+
+    <ImageView
+        android:id="@+id/imRamka"
+        android:layout_width="150dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="127dp"
+        android:background="#00FFEB3B"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ramockka" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#83F1CF68"
+        android:gravity="center"
+        android:rotationX="10"
+        android:text="Добро Пожаловать!"
+        android:textColor="#9E3E37"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStek"
+        app:layout_constraintEnd_toEndOf="@+id/imRamka"
+        app:layout_constraintStart_toStartOf="@+id/imRamka"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <TextView
+        android:id="@+id/tvChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#86673AB7"
+        android:gravity="center"
+        android:rotationX="10"
+        android:text="Введите имя и фамилию:"
+        android:textColor="#FFEB3B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHello"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvHello"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+    <EditText
+        android:id="@+id/edFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#B59AE4"
+        android:backgroundTint="#A384D8"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        android:rotationX="10"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvChoice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvChoice"
+        app:layout_constraintTop_toBottomOf="@+id/tvChoice" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#A36AAC"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="text"
+        android:rotationX="10"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="@+id/edFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/edFirstName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
